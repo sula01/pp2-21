@@ -1,3 +1,3 @@
-with open('abc.txt') as fh1, open('test.txt') as fh2:
-    for line1, line2 in zip(fh1, fh2):
-        print(line1+line2)
+with open('abc.txt') as file1, open ('test.txt') as file2:
+    for l1, l2 in zip(file1, file2):
+        print(l1 + l2)
