@@ -5,7 +5,7 @@ WIDTH = 800
 HEIGHT = 650
 FPS = 30
 
-# Задаем цвета
+# colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
@@ -14,11 +14,11 @@ BLUE = (0, 0, 255)
 
 score = 0
 
-#Создаем игру и окно
+#create game and window
 pygame.init()
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Hungry lion")
+pygame.display.set_caption("HUNGRY LION!")
 clock = pygame.time.Clock()
 
 
@@ -83,7 +83,7 @@ for f in range(30):
 lion = Lion()
 my_sprite.add(lion)
 
-#Цикл игры
+#main loop
 running = True
 
 while running:
@@ -96,12 +96,12 @@ while running:
             running = False
             quit()
 
-    #Обновление
+    #updates
     enemies.update()
     my_sprite.update()
     foods.update()
 
-    #Рендеринг
+    #rendering
     screen.fill(WHITE)
 
     enemies.draw(screen)
@@ -121,7 +121,7 @@ while running:
     text1 = font.render(f'Score : {score}', 1, (0, 0, 0))
     screen.blit(text1, (20, 20))
 
-    #После отрисовки всего, переворачиваем экран
+    #end
     pygame.display.flip()
 
 pygame.quit()

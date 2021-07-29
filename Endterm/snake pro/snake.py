@@ -7,14 +7,14 @@ WIDTH = 800
 HEIGHT = 600
 FPS = 60
 
-# Задаем цвета
+#colors
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 BLUE = (0, 0, 255)
 
-# создаем игру и окно
+#create game and window
 pygame.init()
 pygame.display.set_caption("SNAKEEEE")
 clock = pygame.time.Clock()
